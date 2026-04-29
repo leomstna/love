@@ -37,13 +37,14 @@
         }
 
         header {
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             animation: fadeIn 1.5s ease-out;
+            padding: 20px;
         }
 
         h1 {
@@ -88,6 +89,39 @@
             animation: float 3s ease-in-out infinite;
         }
 
+        /* Imagens */
+        .foto-destaque {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 15px;
+            border: 3px solid var(--cor-detalhe);
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
+        .img-fluid {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+            border: 1px solid var(--cor-detalhe);
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid var(--cor-detalhe);
+            aspect-ratio: 1 / 1;
+        }
+
         footer {
             padding: 30px;
             text-align: center;
@@ -95,7 +129,6 @@
             opacity: 0.6;
         }
 
-        /* Responsividade */
         @media (max-width: 600px) {
             h1 { font-size: 2.2rem; }
         }
@@ -106,6 +139,7 @@
     <header>
         <div class="floating-heart">❤️</div>
         <h1>Cacal & Leo</h1>
+        <img src="img/casal-se-olhando.jpg" alt="Leo e Cacal" class="foto-destaque">
         <p>Bem-vinda ao nosso refúgio digital, minha futura esposa.</p>
     </header>
 
@@ -114,16 +148,24 @@
         <section>
             <h2>Por que te amo inteira</h2>
             <p>Não é só uma coisa, é tudo. Adoro o seu <span class="highlight">rosto</span>, o brilho no seu olhar e como você sorri pra mim. Sua <span class="highlight">personalidade</span> é única, doce e intensa ao mesmo tempo.</p>
+            <img src="img/cacal-perfeita.jpg" alt="Cacal Perfeita" class="img-fluid">
         </section>
 
         <section>
             <h2>Minha Devoção</h2>
             <p>Eu admiro cada detalhe do seu <span class="highlight">corpo</span>, de cima a baixo. Sim, eu sou viciado em você por inteira — e a gente sabe bem o quanto aquele seu corpo incrível me deixa louco.</p>
+            <img src="img/casal-abraco-costas.jpg" alt="Nós dois" class="img-fluid">
         </section>
 
         <section>
             <h2>Nossa Dinâmica</h2>
             <p>O que a gente tem é sagrado e só nosso. Gosto de como você se entrega, de ser <span class="highlight">sua submissa</span> e de como eu ocupo meu lugar como <span class="highlight">seu dono</span>. Nossa conexão na intimidade é o que nos torna um só.</p>
+            <div class="galeria">
+                <img src="img/casal-juntos.jpg" alt="Casal">
+                <img src="img/leo-regata-preta.jpg" alt="Leo">
+                <img src="img/leo-dreads-1.jpg" alt="Leo Dreads">
+                <img src="img/leo-dreads-3.jpg" alt="Leo Dreads">
+            </div>
         </section>
 
         <section>
