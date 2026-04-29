@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacal & Leo | Nossa História</title>
+    <style>
+        :root {
+            --cor-fundo: #0a0a0a;
+            --cor-primaria: #e0e0e0;
+            --cor-detalhe: #b19470;
+            --fonte: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--cor-fundo);
+            color: var(--cor-primaria);
+            font-family: var(--fonte);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Animação de Fade In */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: var(--cor-detalhe);
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--cor-detalhe);
+            animation: fadeIn 2s ease-out;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--cor-detalhe);
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .floating-heart {
+            font-size: 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="floating-heart">❤️</div>
+        <h1>Cacal & Leo</h1>
+        <p>Bem-vinda ao nosso refúgio digital, minha futura esposa.</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>Por que te amo inteira</h2>
+            <p>Não é só uma coisa, é tudo. Adoro o seu <span class="highlight">rosto</span>, o brilho no seu olhar e como você sorri pra mim. Sua <span class="highlight">personalidade</span> é única, doce e intensa ao mesmo tempo.</p>
+        </section>
+
+        <section>
+            <h2>Minha Devoção</h2>
+            <p>Eu admiro cada detalhe do seu <span class="highlight">corpo</span>, de cima a baixo. Sim, eu sou viciado em você por inteira — e a gente sabe bem o quanto aquele seu corpo incrível me deixa louco.</p>
+        </section>
+
+        <section>
+            <h2>Nossa Dinâmica</h2>
+            <p>O que a gente tem é sagrado e só nosso. Gosto de como você se entrega, de ser <span class="highlight">sua submissa</span> e de como eu ocupo meu lugar como <span class="highlight">seu dono</span>. Nossa conexão na intimidade é o que nos torna um só.</p>
+        </section>
+
+        <section>
+            <h2>O Futuro</h2>
+            <p>Este é só o começo da nossa história. Mal posso esperar para o dia em que você será oficialmente a Sra. Santana.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        Desenvolvido com amor por Gemi para o Leo. <br>
+        2026 - Nossa Eternidade.
+    </footer>
+
+</body>
+</html>
